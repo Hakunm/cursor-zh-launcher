@@ -1,0 +1,18 @@
+[package]
+name = "cursor-zh-launcher"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+cursor-zh-core = { path = "../../crates/cursor-zh-core" }
+open.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys.workspace = true
+
+[lints]
+workspace = true

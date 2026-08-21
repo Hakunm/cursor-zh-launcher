@@ -1,0 +1,890 @@
+{
+  "schemaVersion": 1,
+  "locale": "zh-CN",
+  "glossaryVersion": 1,
+  "nls": [
+    {
+      "id": "nls.main-thread-cursor.workspace-disconnected.title",
+      "module": "vs/workbench/api/browser/mainThreadCursor",
+      "key": "extensionHostTimeoutTitle",
+      "source": "Workspace Disconnected",
+      "target": "工作区连接已断开",
+      "context": "工具执行启动阶段的错误标题",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.main-thread-cursor.agent-session-init-failed.title",
+      "module": "vs/workbench/api/browser/mainThreadCursor",
+      "key": "sessionInitFailedTitle",
+      "source": "Agent Session Initialization Failed",
+      "target": "智能体会话初始化失败",
+      "context": "智能体执行会话初始化错误标题",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.main-thread-cursor.agent-session-not-found.title",
+      "module": "vs/workbench/api/browser/mainThreadCursor",
+      "key": "sessionNotFoundTitle",
+      "source": "Agent Session Not Found",
+      "target": "未找到智能体会话",
+      "context": "智能体执行会话丢失错误标题",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.main-thread-cursor.agent-stream-start-failed.title",
+      "module": "vs/workbench/api/browser/mainThreadCursor",
+      "key": "streamStartFailedTitle",
+      "source": "Agent Stream Start Failed",
+      "target": "智能体流启动失败",
+      "context": "智能体执行流启动错误标题",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.main-thread-cursor.reload-window",
+      "module": "vs/workbench/api/browser/mainThreadCursor",
+      "key": "reloadWindow",
+      "source": "Reload Window",
+      "target": "重新加载窗口",
+      "context": "智能体错误对话框操作按钮",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.browser-editor.close-tab.message",
+      "module": "vs/workbench/contrib/composer/browser/browserEditor.contribution",
+      "key": "closeBrowserTab.message",
+      "source": "Close Browser Tab",
+      "target": "关闭浏览器标签页",
+      "context": "关闭智能体创建的浏览器标签页确认标题",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.browser-editor.open-browser",
+      "module": "vs/workbench/contrib/composer/browser/browserEditor.contribution",
+      "key": "openBrowser",
+      "source": "Open Browser",
+      "target": "打开浏览器",
+      "context": "内置浏览器命令",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.browser-editor.new-tab",
+      "module": "vs/workbench/contrib/composer/browser/browserEditor.contribution",
+      "key": "newBrowserTab",
+      "source": "New Browser Tab",
+      "target": "新建浏览器标签页",
+      "context": "内置浏览器命令",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.browser-editor.reload-tab",
+      "module": "vs/workbench/contrib/composer/browser/browserEditor.contribution",
+      "key": "reloadBrowserTab",
+      "source": "Reload Browser Tab",
+      "target": "重新加载浏览器标签页",
+      "context": "内置浏览器命令",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.browser-context.open-link",
+      "module": "vs/workbench/contrib/composer/electron-sandbox/webviewBrowserManager",
+      "key": "browserContextMenu.openLinkExternalBrowser",
+      "source": "Open Link in Browser",
+      "target": "在浏览器中打开链接",
+      "context": "内置浏览器右键菜单",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.browser-context.copy-link",
+      "module": "vs/workbench/contrib/composer/electron-sandbox/webviewBrowserManager",
+      "key": "browserContextMenu.copyLinkAddress",
+      "source": "Copy Link Address",
+      "target": "复制链接地址",
+      "context": "内置浏览器右键菜单",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.composer-storage.failed-load.title",
+      "module": "vs/workbench/contrib/composer/browser/composerMessageStorageService",
+      "key": "checkpointHydrationErrorTitle",
+      "source": "Failed to Load Conversation",
+      "target": "无法加载对话",
+      "context": "对话检查点读取错误标题",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.composer-transcript.open-file-failed",
+      "module": "vs/workbench/contrib/composer/browser/transcript/composerTranscriptToolRuntime",
+      "key": "composerTranscript.openFileFailed",
+      "source": "Unable to open {0}",
+      "target": "无法打开 {0}",
+      "context": "对话转录工具打开文件失败消息",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.chat-file.add-to-chat",
+      "module": "vs/workbench/contrib/cursorAiMarkdown/browser/chatFileReferenceContextMenu",
+      "key": "chatFileAddToChat",
+      "source": "Add to Chat",
+      "target": "添加到对话",
+      "context": "聊天文件引用右键菜单",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.markdown-plan.build-plan",
+      "module": "vs/workbench/contrib/cursorMarkdownPlanEditor/browser/markdownPlanEditorActions",
+      "key": "acceptPlan",
+      "source": "Build Plan",
+      "target": "执行计划",
+      "context": "Markdown 计划编辑器确认操作",
+      "status": "reviewed"
+    }
+  ],
+  "runtime": [
+    {
+      "id": "renderer.welcome.login",
+      "surface": "renderer",
+      "source": "Log In",
+      "target": "登录",
+      "context": "未登录欢迎页主按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.welcome.signup",
+      "surface": "renderer",
+      "source": "Sign Up",
+      "target": "注册",
+      "context": "未登录欢迎页次按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.glass-menu.file",
+      "surface": "renderer",
+      "source": "File",
+      "target": "文件",
+      "context": "Glass Workbench 顶部菜单按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button[aria-haspopup='menu']"]
+    },
+    {
+      "id": "renderer.glass-menu.edit",
+      "surface": "renderer",
+      "source": "Edit",
+      "target": "编辑",
+      "context": "Glass Workbench 顶部菜单按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button[aria-haspopup='menu']"]
+    },
+    {
+      "id": "renderer.glass-menu.view",
+      "surface": "renderer",
+      "source": "View",
+      "target": "视图",
+      "context": "Glass Workbench 顶部菜单按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button[aria-haspopup='menu']"]
+    },
+    {
+      "id": "renderer.glass-menu.help",
+      "surface": "renderer",
+      "source": "Help",
+      "target": "帮助",
+      "context": "Glass Workbench 顶部菜单按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button[aria-haspopup='menu']"]
+    },
+    {
+      "id": "renderer.sidebar.new-chat",
+      "surface": "renderer",
+      "source": "New Chat",
+      "target": "新建对话",
+      "context": "Glass Workbench 左侧栏操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-sidebar-menu-button-label"]
+    },
+    {
+      "id": "renderer.sidebar.search",
+      "surface": "renderer",
+      "source": "Search",
+      "target": "搜索",
+      "context": "Glass Workbench 左侧栏操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-sidebar-menu-button-label"]
+    },
+    {
+      "id": "renderer.sidebar.automations",
+      "surface": "renderer",
+      "source": "Automations",
+      "target": "自动化",
+      "context": "Glass Workbench 左侧栏操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-sidebar-menu-button-label"]
+    },
+    {
+      "id": "renderer.sidebar.customize",
+      "surface": "renderer",
+      "source": "Customize",
+      "target": "自定义",
+      "context": "Glass Workbench 左侧栏操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-sidebar-menu-button-label"]
+    },
+    {
+      "id": "renderer.sidebar.repositories",
+      "surface": "renderer",
+      "source": "Repositories",
+      "target": "仓库",
+      "context": "Glass Workbench 左侧栏分组标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-sidebar-group-label-title"]
+    },
+    {
+      "id": "renderer.onboarding.skip",
+      "surface": "renderer",
+      "source": "Skip",
+      "target": "跳过",
+      "context": "Glass Workbench 入门步骤按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.integrations.connect-slack",
+      "surface": "renderer",
+      "source": "Connect Slack",
+      "target": "连接 Slack",
+      "context": "Glass Workbench 集成操作按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.agent.multitask",
+      "surface": "renderer",
+      "source": "Multitask",
+      "target": "多任务",
+      "context": "智能体模式胶囊标签",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-pill__label"]
+    },
+    {
+      "id": "renderer.agent.this-pc",
+      "surface": "renderer",
+      "source": "This PC",
+      "target": "此电脑",
+      "context": "智能体运行位置选择按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.agent.extra-high",
+      "surface": "renderer",
+      "source": "Extra High",
+      "target": "超高",
+      "context": "智能体推理强度选择按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.agent.plan-new-idea",
+      "surface": "renderer",
+      "source": "Plan New Idea",
+      "target": "规划新想法",
+      "context": "智能体模式选择按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.prompt.build-from-design.title",
+      "surface": "renderer",
+      "source": "Build from a design",
+      "target": "从设计稿开始构建",
+      "context": "智能体首页推荐任务标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.prompt.build-from-design.detail",
+      "surface": "renderer",
+      "source": "Turn a frame into clickable UI with real layout",
+      "target": "将设计框转换为具有真实布局的可交互界面",
+      "context": "智能体首页推荐任务说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.prompt.deploy-prototype.title",
+      "surface": "renderer",
+      "source": "Deploy my prototype",
+      "target": "部署我的原型",
+      "context": "智能体首页推荐任务标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.prompt.deploy-prototype.detail",
+      "surface": "renderer",
+      "source": "Put it on a live link anyone can open",
+      "target": "将它发布到任何人都能打开的在线链接",
+      "context": "智能体首页推荐任务说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.prompt.start-with-plan.title",
+      "surface": "renderer",
+      "source": "Start with a plan",
+      "target": "从计划开始",
+      "context": "智能体首页推荐任务标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.prompt.start-with-plan.detail",
+      "surface": "renderer",
+      "source": "Align on implementation before writing code",
+      "target": "在编写代码前先确认实现方案",
+      "context": "智能体首页推荐任务说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.prompt.debug-issue.title",
+      "surface": "renderer",
+      "source": "Debug an issue",
+      "target": "调试问题",
+      "context": "智能体首页推荐任务标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.prompt.debug-issue.detail",
+      "surface": "renderer",
+      "source": "Find root causes and fix tricky bugs",
+      "target": "查明根因并修复棘手错误",
+      "context": "智能体首页推荐任务说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.sidebar.getting-started",
+      "surface": "renderer",
+      "source": "Getting Started",
+      "target": "入门",
+      "context": "Glass Workbench 左侧栏入门分组",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.customize.browse",
+      "surface": "renderer",
+      "source": "Browse",
+      "target": "浏览",
+      "context": "自定义页面顶部导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.customize.marketplace",
+      "surface": "renderer",
+      "source": "Marketplace",
+      "target": "市场",
+      "context": "自定义页面顶部导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.customize.browse-marketplace-label",
+      "surface": "renderer",
+      "source": "Browse Marketplace",
+      "target": "浏览市场",
+      "context": "自定义页面市场切换按钮无障碍标签",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button"]
+    },
+    {
+      "id": "renderer.customize.plugins",
+      "surface": "renderer",
+      "source": "Plugins",
+      "target": "插件",
+      "context": "自定义页面分类导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-pill__label"]
+    },
+    {
+      "id": "renderer.customize.mcps",
+      "surface": "renderer",
+      "source": "MCPs",
+      "target": "MCP",
+      "context": "自定义页面分类导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-pill__label"]
+    },
+    {
+      "id": "renderer.customize.skills",
+      "surface": "renderer",
+      "source": "Skills",
+      "target": "技能",
+      "context": "自定义页面分类导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-pill__label"]
+    },
+    {
+      "id": "renderer.customize.subagents",
+      "surface": "renderer",
+      "source": "Subagents",
+      "target": "子智能体",
+      "context": "自定义页面分类导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-pill__label"]
+    },
+    {
+      "id": "renderer.customize.rules",
+      "surface": "renderer",
+      "source": "Rules",
+      "target": "规则",
+      "context": "自定义页面分类导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-pill__label"]
+    },
+    {
+      "id": "renderer.customize.commands",
+      "surface": "renderer",
+      "source": "Commands",
+      "target": "命令",
+      "context": "自定义页面分类导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-pill__label"]
+    },
+    {
+      "id": "renderer.customize.hooks",
+      "surface": "renderer",
+      "source": "Hooks",
+      "target": "钩子",
+      "context": "自定义页面分类导航",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-pill__label"]
+    },
+    {
+      "id": "renderer.customize.new",
+      "surface": "renderer",
+      "source": "New",
+      "target": "新建",
+      "context": "自定义页面新建资源按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button", "[role='button']"]
+    },
+    {
+      "id": "renderer.customize.add",
+      "surface": "renderer",
+      "source": "Add",
+      "target": "添加",
+      "context": "自定义页面添加资源按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button", "[role='button']"]
+    },
+    {
+      "id": "renderer.customize.documentation",
+      "surface": "renderer",
+      "source": "Documentation",
+      "target": "文档",
+      "context": "自定义页面文档按钮",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button", "[role='button']"]
+    },
+    {
+      "id": "renderer.customize.mcp-title",
+      "surface": "renderer",
+      "source": "Connect External Tools with MCP",
+      "target": "使用 MCP 连接外部工具",
+      "context": "MCP 自定义页标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='primary']"]
+    },
+    {
+      "id": "renderer.customize.mcp-description",
+      "surface": "renderer",
+      "source": "Model Context Protocol servers connect Cursor to external tools and data sources like Linear, Figma, and Notion.",
+      "target": "模型上下文协议服务器可将 Cursor 连接到 Linear、Figma 和 Notion 等外部工具与数据源。",
+      "context": "MCP 自定义页说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='secondary']"]
+    },
+    {
+      "id": "renderer.customize.plugins-title",
+      "surface": "renderer",
+      "source": "Extend Cursor with Plugins",
+      "target": "使用插件扩展 Cursor",
+      "context": "插件自定义页标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='primary']"]
+    },
+    {
+      "id": "renderer.customize.plugins-description",
+      "surface": "renderer",
+      "source": "Plugins bundle rules, skills, subagents, commands, MCP servers, and hooks into one installable package.",
+      "target": "插件可将规则、技能、子智能体、命令、MCP 服务器和钩子打包为一个可安装的软件包。",
+      "context": "插件自定义页说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='secondary']"]
+    },
+    {
+      "id": "renderer.customize.user-section",
+      "surface": "renderer",
+      "source": "User",
+      "target": "用户",
+      "context": "技能和规则自定义页的用户级资源分组",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.17.8-win32-x64"],
+      "scopes": [".ui-customize-view .ui-text[data-color='primary']"]
+    },
+    {
+      "id": "renderer.customize.user-rule-type",
+      "surface": "renderer",
+      "source": "User Rule",
+      "target": "用户规则",
+      "context": "规则自定义页的规则类型标签",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.17.8-win32-x64"],
+      "scopes": [".ui-customize-view .ui-text[data-color='tertiary']"]
+    },
+    {
+      "id": "renderer.customize.subagents-title",
+      "surface": "renderer",
+      "source": "Delegate Work to Subagents",
+      "target": "将工作委派给子智能体",
+      "context": "子智能体自定义页标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.17.8-win32-x64"],
+      "scopes": [".ui-text[data-color='primary']"]
+    },
+    {
+      "id": "renderer.customize.subagents-description",
+      "surface": "renderer",
+      "source": "Subagents are specialized assistants that run in their own context window so Agent can parallelize and stay focused.",
+      "target": "子智能体是在独立上下文窗口中运行的专用助手，可让智能体并行处理工作并保持专注。",
+      "context": "子智能体自定义页说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.17.8-win32-x64"],
+      "scopes": [".ui-text[data-color='secondary']"]
+    },
+    {
+      "id": "renderer.customize.commands-title",
+      "surface": "renderer",
+      "source": "Create Reusable Commands",
+      "target": "创建可复用命令",
+      "context": "命令自定义页标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='primary']"]
+    },
+    {
+      "id": "renderer.customize.commands-description",
+      "surface": "renderer",
+      "source": "Commands are reusable prompts you invoke with /name to standardize common workflows across your team.",
+      "target": "命令是可通过 /name 调用的可复用提示词，用于统一团队的常用工作流。",
+      "context": "命令自定义页说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='secondary']"]
+    },
+    {
+      "id": "renderer.customize.hooks-title",
+      "surface": "renderer",
+      "source": "Automate with Hooks",
+      "target": "使用钩子实现自动化",
+      "context": "Hooks 自定义页标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='primary']"]
+    },
+    {
+      "id": "renderer.customize.hooks-description",
+      "surface": "renderer",
+      "source": "Hooks run custom scripts at lifecycle events to observe, control, and extend the agent loop.",
+      "target": "钩子会在生命周期事件中运行自定义脚本，以观察、控制并扩展智能体循环。",
+      "context": "Hooks 自定义页说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='secondary']"]
+    },
+    {
+      "id": "renderer.customize.open-config",
+      "surface": "renderer",
+      "source": "Open config",
+      "target": "打开配置",
+      "context": "Hooks 配置操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button", "[role='button']"]
+    },
+    {
+      "id": "renderer.customize.execution-log",
+      "surface": "renderer",
+      "source": "Execution Log",
+      "target": "执行日志",
+      "context": "Hooks 执行日志标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='primary']"]
+    },
+    {
+      "id": "renderer.customize.clear-log",
+      "surface": "renderer",
+      "source": "Clear log",
+      "target": "清除日志",
+      "context": "Hooks 执行日志操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": ["button", "[role='button']"]
+    },
+    {
+      "id": "renderer.customize.no-hook-executions",
+      "surface": "renderer",
+      "source": "No hook executions yet",
+      "target": "尚无钩子执行记录",
+      "context": "Hooks 执行日志空状态标题",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='primary']"]
+    },
+    {
+      "id": "renderer.customize.hook-log-empty-description",
+      "surface": "renderer",
+      "source": "Hooks that run during the agent's loop will show up here.",
+      "target": "智能体循环期间运行的钩子会显示在这里。",
+      "context": "Hooks 执行日志空状态说明",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": [".ui-text[data-color='secondary']"]
+    },
+    {
+      "id": "native-menu.file",
+      "surface": "native-menu",
+      "source": "File",
+      "target": "文件",
+      "context": "Electron 顶层应用菜单",
+      "status": "reviewed",
+      "profileIds": [],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.edit",
+      "surface": "native-menu",
+      "source": "Edit",
+      "target": "编辑",
+      "context": "Electron 顶层应用菜单",
+      "status": "reviewed",
+      "profileIds": [],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.view",
+      "surface": "native-menu",
+      "source": "View",
+      "target": "视图",
+      "context": "Electron 顶层应用菜单",
+      "status": "reviewed",
+      "profileIds": [],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.window",
+      "surface": "native-menu",
+      "source": "Window",
+      "target": "窗口",
+      "context": "Electron 顶层应用菜单",
+      "status": "reviewed",
+      "profileIds": [],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.help",
+      "surface": "native-menu",
+      "source": "Help",
+      "target": "帮助",
+      "context": "Electron 顶层应用菜单",
+      "status": "reviewed",
+      "profileIds": [],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.tray.login",
+      "surface": "native-menu",
+      "source": "Log In",
+      "target": "登录",
+      "context": "系统托盘未登录操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.tray.signup",
+      "surface": "native-menu",
+      "source": "Sign Up",
+      "target": "注册",
+      "context": "系统托盘未登录操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.tray.no-recent-agents",
+      "surface": "native-menu",
+      "source": "No recent agents",
+      "target": "没有最近使用的智能体",
+      "context": "系统托盘智能体列表空状态",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.tray.new-agent",
+      "surface": "native-menu",
+      "source": "New Agent",
+      "target": "新建智能体",
+      "context": "系统托盘新建智能体操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.tray.clear-notifications",
+      "surface": "native-menu",
+      "source": "Clear All Notifications",
+      "target": "清除所有通知",
+      "context": "系统托盘通知操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.tray.open-cursor",
+      "surface": "native-menu",
+      "source": "Open Cursor",
+      "target": "打开 Cursor",
+      "context": "系统托盘打开主窗口操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.tray.settings",
+      "surface": "native-menu",
+      "source": "Settings",
+      "target": "设置",
+      "context": "系统托盘设置操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": []
+    },
+    {
+      "id": "native-menu.tray.quit",
+      "surface": "native-menu",
+      "source": "Quit",
+      "target": "退出",
+      "context": "系统托盘退出应用操作",
+      "status": "reviewed",
+      "profileIds": ["cursor-3.16.17-win32-x64"],
+      "scopes": []
+    }
+  ],
+  "extensions": [
+    {
+      "id": "extension.shadow-workspace.display-name",
+      "extensionId": "anysphere.cursor-shadow-workspace",
+      "key": "displayName",
+      "source": "Cursor Shadow Workspace",
+      "target": "Cursor 影子工作区",
+      "context": "内置影子工作区扩展名称",
+      "status": "reviewed"
+    },
+    {
+      "id": "extension.shadow-workspace.description",
+      "extensionId": "anysphere.cursor-shadow-workspace",
+      "key": "description",
+      "source": "Manages a hidden local window that AI agents can use to refine their code before showing it to you.",
+      "target": "管理一个隐藏的本地窗口，供 AI 智能体在向你展示代码前进行完善。",
+      "context": "内置影子工作区扩展说明",
+      "status": "reviewed"
+    },
+    {
+      "id": "extension.retrieval.display-name",
+      "extensionId": "anysphere.cursor-retrieval",
+      "key": "displayName",
+      "source": "AI Completions",
+      "target": "AI 补全",
+      "context": "内置代码补全扩展名称",
+      "status": "reviewed"
+    },
+    {
+      "id": "extension.retrieval.description",
+      "extensionId": "anysphere.cursor-retrieval",
+      "key": "description",
+      "source": "Get completions from a code language model.",
+      "target": "从代码语言模型获取补全建议。",
+      "context": "内置代码补全扩展说明",
+      "status": "reviewed"
+    },
+    {
+      "id": "extension.always-local.display-name",
+      "extensionId": "anysphere.cursor-always-local",
+      "key": "displayName",
+      "source": "Cursor Always Local",
+      "target": "Cursor 始终本地运行",
+      "context": "内置本地运行扩展名称",
+      "status": "reviewed"
+    },
+    {
+      "id": "extension.always-local.description",
+      "extensionId": "anysphere.cursor-always-local",
+      "key": "description",
+      "source": "Experimentation @ cursor.sh",
+      "target": "cursor.sh 实验功能",
+      "context": "内置本地运行扩展说明",
+      "status": "reviewed"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust toolchain
+        shell: pwsh
+        run: |
+          rustup toolchain install 1.98.0 --profile minimal --component rustfmt,clippy
+          rustup default 1.98.0
+
+      - name: Install NSIS
+        shell: pwsh
+        run: choco install nsis --yes --no-progress
+
+      - name: Build and verify release artifacts
+        shell: pwsh
+        env:
+          CURSOR_ZH_RELEASES_API: https://api.github.com/repos/${{ github.repository }}/releases/latest
+        run: |
+          if ("${{ github.ref_type }}" -eq "tag") {
+            $version = "${{ github.ref_name }}".TrimStart("v")
+            $metadata = cargo metadata --no-deps --format-version 1 | ConvertFrom-Json
+            $packageVersions = @(
+              $metadata.packages | ForEach-Object { $_.version } | Sort-Object -Unique
+            )
+            if ($packageVersions.Count -ne 1 -or $packageVersions[0] -ne $version) {
+              throw "Tag version $version does not match Cargo package versions: $packageVersions"
+            }
+          } else {
+            $version = "1.0.1-ci.${{ github.run_number }}"
+          }
+          ./scripts/build-release.ps1 -Version $version -ArtifactsDir ./artifacts
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: cursor-zh-launcher-windows-x64
+          path: |
+            artifacts/*.exe
+            artifacts/*.sha256
+          if-no-files-found: error
+
+  release:
+    if: github.ref_type == 'tag'
+    needs: windows
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download verified Windows artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: cursor-zh-launcher-windows-x64
+          path: release-artifacts
+
+      - name: Create or update GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          shopt -s nullglob
+          artifacts=(release-artifacts/*)
+          if (( ${#artifacts[@]} == 0 )); then
+            echo "No release artifacts were downloaded" >&2
+            exit 1
+          fi
+
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" "${artifacts[@]}" --clobber
+          else
+            release_title="$RELEASE_TAG"
+            notes=(--generate-notes)
+            if [[ "$RELEASE_TAG" == "v1.0.1" ]]; then
+              release_title="v1.0.1"
+              notes=(--notes-file .github/release-notes-v1.0.1.md)
+            fi
+            flags=(--verify-tag --title "$release_title" "${notes[@]}")
+            if [[ "$RELEASE_TAG" == *-* ]]; then
+              flags+=(--prerelease)
+            fi
+            gh release create "$RELEASE_TAG" "${artifacts[@]}" "${flags[@]}"
+          fi

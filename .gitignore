@@ -1,0 +1,13 @@
+# Build output
+/target/
+/artifacts/
+/dist/
+/installer/out/
+
+# Local development state
+/.vscode/
+/.idea/
+*.log
+*.tmp
+*.bak
+

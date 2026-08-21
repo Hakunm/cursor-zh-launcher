@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "locale": "zh-CN",
+  "glossaryVersion": 1,
+  "nls": [],
+  "runtime": [
+    {"id":"renderer.agents-menu.new-agent","surface":"renderer","source":"New Agent","target":"新建智能体","context":"Agents 窗口文件菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[data-component='menu-item-label']"]},
+    {"id":"renderer.agents-menu.open-folder","surface":"renderer","source":"Open Folder","target":"打开文件夹","context":"Agents 窗口文件菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[data-component='menu-item-label']"]},
+    {"id":"renderer.agents-menu.new-terminal","surface":"renderer","source":"New Terminal","target":"新建终端","context":"Agents 窗口文件菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[data-component='menu-item-label']"]},
+    {"id":"renderer.agents-menu.new-browser","surface":"renderer","source":"New Browser","target":"新建浏览器","context":"Agents 窗口文件菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[data-component='menu-item-label']"]},
+    {"id":"renderer.agents-menu.open-ide","surface":"renderer","source":"Open IDE","target":"打开 IDE","context":"Agents 窗口文件菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[data-component='menu-item-label']"]},
+    {"id":"renderer.agents-menu.exit","surface":"renderer","source":"Exit","target":"退出","context":"Agents 窗口文件菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[data-component='menu-item-label']"]},
+
+    {"id":"renderer.ide-menu.file","surface":"renderer","source":"File","target":"文件","context":"IDE 窗口顶部菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".menubar-menu-title"]},
+    {"id":"renderer.ide-menu.edit","surface":"renderer","source":"Edit","target":"编辑","context":"IDE 窗口顶部菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".menubar-menu-title"]},
+    {"id":"renderer.ide-menu.selection","surface":"renderer","source":"Selection","target":"选择","context":"IDE 窗口顶部菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".menubar-menu-title"]},
+    {"id":"renderer.ide-menu.view","surface":"renderer","source":"View","target":"视图","context":"IDE 窗口顶部菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".menubar-menu-title"]},
+    {"id":"renderer.ide-menu.go","surface":"renderer","source":"Go","target":"转到","context":"IDE 窗口顶部菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".menubar-menu-title"]},
+    {"id":"renderer.ide-menu.run","surface":"renderer","source":"Run","target":"运行","context":"IDE 窗口顶部菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".menubar-menu-title"]},
+    {"id":"renderer.ide-menu.terminal","surface":"renderer","source":"Terminal","target":"终端","context":"IDE 窗口顶部菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".menubar-menu-title"]},
+    {"id":"renderer.ide-menu.help","surface":"renderer","source":"Help","target":"帮助","context":"IDE 窗口顶部菜单","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".menubar-menu-title"]},
+
+    {"id":"renderer.ide-titlebar.agents-window","surface":"renderer","source":"Agents Window","target":"智能体窗口","context":"IDE 标题栏返回 Agents 窗口按钮","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".open-agents-window-label"]},
+    {"id":"renderer.ide-titlebar.new-agent-aria","surface":"renderer","source":"New Agent (Ctrl+Shift+L)","target":"新建智能体（Ctrl+Shift+L）","context":"IDE 标题栏新建智能体按钮无障碍标签","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".titlebar-right [role='button']"]},
+    {"id":"renderer.ide-titlebar.toggle-agents-aria","surface":"renderer","source":"Toggle Agents (Ctrl+Alt+J)","target":"切换智能体（Ctrl+Alt+J）","context":"IDE 标题栏切换智能体按钮无障碍标签","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".titlebar-right [role='button']"]},
+    {"id":"renderer.ide-titlebar.settings-aria","surface":"renderer","source":"Open Cursor Settings","target":"打开 Cursor 设置","context":"IDE 标题栏 Cursor 设置按钮无障碍标签","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".titlebar-right [role='button']"]},
+
+    {"id":"renderer.ide-welcome.settings","surface":"renderer","source":"Settings","target":"设置","context":"IDE 空白页套餐旁设置入口","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".part.editor .text-text-link-foreground"]},
+    {"id":"renderer.ide-welcome.open-project","surface":"renderer","source":"Open project","target":"打开项目","context":"IDE 空白页打开项目操作","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".empty-screen-button"]},
+    {"id":"renderer.ide-welcome.clone-repo","surface":"renderer","source":"Clone repo","target":"克隆仓库","context":"IDE 空白页克隆仓库操作","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".empty-screen-button"]},
+    {"id":"renderer.ide-welcome.connect-ssh","surface":"renderer","source":"Connect via SSH","target":"通过 SSH 连接","context":"IDE 空白页 SSH 连接操作","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".empty-screen-button"]},
+    {"id":"renderer.ide-welcome.steer-ios","surface":"renderer","source":"Steer from iOS","target":"通过 iOS 操控","context":"IDE 空白页 iOS 操控入口","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":[".empty-screen-button"]},
+    {"id":"renderer.ide-status.no-commit","surface":"renderer","source":"No commit scored","target":"尚无提交评分","context":"IDE 状态栏提交评分空状态","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[id='aiCodeTracking.stats.recentCommit']"]},
+    {"id":"renderer.ide-status.no-commit-aria","surface":"renderer","source":"No commit has been scored yet","target":"尚无提交评分","context":"IDE 状态栏提交评分无障碍标签","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[id='aiCodeTracking.stats.recentCommit']"]},
+    {"id":"renderer.ide-status.agent-stats","surface":"renderer","source":"Agent Stats: {accepted}/{suggested} ({percent}%)","target":"智能体统计：{accepted}/{suggested}（{percent}%）","context":"IDE 状态栏智能体代码接受统计","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[id='aiCodeTracking.stats.composer']"]},
+    {"id":"renderer.ide-status.tab-stats","surface":"renderer","source":"Tab Stats: {accepted}/{suggested} ({percent}%)","target":"标签页统计：{accepted}/{suggested}（{percent}%）","context":"IDE 状态栏 Tab 代码接受统计","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[id='aiCodeTracking.stats.tab']"]},
+    {"id":"renderer.ide-status.agent-stats-aria","surface":"renderer","source":"Agent AI Stats: {accepted} accepted out of {suggested} suggested, {percent} percent acceptance rate","target":"智能体 AI 统计：已接受 {accepted} 行，共建议 {suggested} 行，接受率 {percent}%","context":"IDE 状态栏智能体代码接受统计无障碍标签","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[id='aiCodeTracking.stats.composer']"]},
+    {"id":"renderer.ide-status.tab-stats-aria","surface":"renderer","source":"Tab AI Stats: {accepted} accepted out of {suggested} suggested, {percent} percent acceptance rate","target":"标签页 AI 统计：已接受 {accepted} 行，共建议 {suggested} 行，接受率 {percent}%","context":"IDE 状态栏 Tab 代码接受统计无障碍标签","status":"reviewed","profileIds":["cursor-3.17.8-win32-x64"],"scopes":["[id='aiCodeTracking.stats.tab']"]}
+  ],
+  "extensions": []
+}

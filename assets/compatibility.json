@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "profiles": [
+    {
+      "id": "cursor-3.16.17-win32-x64",
+      "cursorVersion": "3.16.17",
+      "cursorCommit": "6b2afae0257df2bb5e1835f15165dc2f0de056b0",
+      "vscodeVersion": "1.128.0",
+      "rendererSignatures": [
+        {
+          "name": "glass-top-menu",
+          "selector": "button[aria-haspopup='menu']",
+          "expectedText": "File"
+        },
+        {
+          "name": "glass-sidebar-actions",
+          "selector": ".ui-sidebar-menu-button-label",
+          "expectedText": "New Chat"
+        }
+      ],
+      "nativeMenuSupported": true
+    },
+    {
+      "id": "cursor-3.17.8-win32-x64",
+      "cursorVersion": "3.17.8",
+      "cursorCommit": "2fdd31c9f33f7fbe501f2d57772dc5bf64b63620",
+      "vscodeVersion": "1.128.0",
+      "rendererSignatures": [
+        {
+          "name": "glass-top-menu",
+          "selector": "button[aria-haspopup='menu']",
+          "expectedText": "File"
+        },
+        {
+          "name": "glass-sidebar-actions",
+          "selector": ".ui-sidebar-menu-button-label",
+          "expectedText": "New Chat"
+        }
+      ],
+      "nativeMenuSupported": true
+    }
+  ]
+}
