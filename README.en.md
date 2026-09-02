@@ -65,7 +65,6 @@ the locally installed Cursor icon.
 ## Compatibility
 
 The launcher detects the installed Cursor build and aims to support most Windows x64 versions.
-Certified profiles currently cover Cursor 3.16.17, 3.17.8, and 3.18.25 on Windows x64.
 A different version does not disable localization: safe, narrowly scoped translations remain
 active. Major future UI changes may temporarily leave some new pages in English until the next
 compatibility update.
