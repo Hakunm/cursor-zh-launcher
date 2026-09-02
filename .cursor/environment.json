@@ -1,0 +1,4 @@
+{
+  "name": "cursor-zh-launcher",
+  "install": "sudo apt-get update && sudo apt-get install -y --no-install-recommends pkg-config libssl-dev && rustup target add x86_64-pc-windows-msvc && cargo fetch --locked && cargo build --all-targets"
+}
