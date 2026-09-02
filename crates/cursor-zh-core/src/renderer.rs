@@ -267,6 +267,10 @@ mod tests {
         assert!(script.contains("新建终端"));
         assert!(script.contains("Open project"));
         assert!(script.contains("打开项目"));
+        assert!(script.contains("New project"));
+        assert!(script.contains("新建项目"));
+        assert!(script.contains("Start from scratch"));
+        assert!(script.contains("从零开始"));
         assert!(script.contains("Steer from iOS"));
         assert!(script.contains("通过 iOS 操控"));
         assert!(script.contains("Agent Stats: {accepted}/{suggested} ({percent}%)"));
