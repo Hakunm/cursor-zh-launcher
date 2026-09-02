@@ -83,5 +83,18 @@ mod tests {
                 .find_by_commit("6b2afae0257df2bb5e1835f15165dc2f0de056b0")
                 .is_some()
         );
+        assert_eq!(
+            compatibility
+                .find_by_commit("280eca2911f1774689696e5f1efa5a4f97a87af0")
+                .map(|profile| profile.cursor_version.as_str()),
+            Some("3.18.25")
+        );
+        assert!(translations.runtime.iter().any(|entry| {
+            entry.id == "renderer.ide-welcome.new-project"
+                && entry.scopes == [".empty-screen-button"]
+        }));
+        assert!(translations.nls.iter().any(|entry| {
+            entry.id == "nls.cursor-origin.copy-link" && entry.source == "Copy cursor.com link"
+        }));
     }
 }

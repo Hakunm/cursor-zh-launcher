@@ -38,6 +38,25 @@
         }
       ],
       "nativeMenuSupported": true
+    },
+    {
+      "id": "cursor-3.18.25-win32-x64",
+      "cursorVersion": "3.18.25",
+      "cursorCommit": "280eca2911f1774689696e5f1efa5a4f97a87af0",
+      "vscodeVersion": "1.128.0",
+      "rendererSignatures": [
+        {
+          "name": "glass-top-menu",
+          "selector": "button[aria-haspopup='menu']",
+          "expectedText": "File"
+        },
+        {
+          "name": "glass-sidebar-actions",
+          "selector": ".ui-sidebar-menu-button-label",
+          "expectedText": "New Chat"
+        }
+      ],
+      "nativeMenuSupported": true
     }
   ]
 }

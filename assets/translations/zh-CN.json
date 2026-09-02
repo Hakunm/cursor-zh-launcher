@@ -137,6 +137,87 @@
       "target": "执行计划",
       "context": "Markdown 计划编辑器确认操作",
       "status": "reviewed"
+    },
+    {
+      "id": "nls.cursor-origin.category",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.category",
+      "source": "Cursor Origin",
+      "target": "Cursor Origin",
+      "context": "Origin 命令分类名称",
+      "status": "allowlisted"
+    },
+    {
+      "id": "nls.cursor-origin.no-file",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.noFile",
+      "source": "No file is currently open.",
+      "target": "当前没有打开的文件。",
+      "context": "复制 Origin 链接时未打开文件",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.cursor-origin.no-link",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.noLink",
+      "source": "Could not build a cursor.com link. Open a file in a git repository with an eligible remote.",
+      "target": "无法生成 cursor.com 链接。请在包含可用远程仓库的 Git 仓库中打开文件。",
+      "context": "复制 Origin 链接失败提示",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.cursor-origin.copy-link-with-selection",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.copyCodeLink",
+      "source": "Copy cursor.com link (with selection)",
+      "target": "复制 cursor.com 链接（含选区）",
+      "context": "复制包含选区的 Origin 链接命令",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.cursor-origin.copy-link-file-only",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.copyCodeLinkWithoutRange",
+      "source": "Copy cursor.com link (file only)",
+      "target": "复制 cursor.com 链接（仅文件）",
+      "context": "复制仅文件的 Origin 链接命令",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.cursor-origin.copy-link",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.copyCodeLink.menu",
+      "source": "Copy cursor.com link",
+      "target": "复制 cursor.com 链接",
+      "context": "编辑器上下文菜单中的 Origin 链接命令",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.cursor-origin.copy-link-explorer",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.copyCodeLinkExplorer.menu",
+      "source": "Copy cursor.com link",
+      "target": "复制 cursor.com 链接",
+      "context": "资源管理器上下文菜单中的 Origin 链接命令",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.cursor-origin.copy-link-editor-title",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.copyCodeLinkEditorTitle.menu",
+      "source": "Copy cursor.com link",
+      "target": "复制 cursor.com 链接",
+      "context": "编辑器标题栏菜单中的 Origin 链接命令",
+      "status": "reviewed"
+    },
+    {
+      "id": "nls.cursor-origin.copy-link-line-number",
+      "module": "vs/workbench/contrib/cursorOrigin/browser/cursorOrigin.contribution",
+      "key": "cursorOrigin.copyCodeLinkLineNumber.menu",
+      "source": "Copy cursor.com link",
+      "target": "复制 cursor.com 链接",
+      "context": "行号菜单中的 Origin 链接命令",
+      "status": "reviewed"
     }
   ],
   "runtime": [
